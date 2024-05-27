@@ -1,0 +1,26 @@
+{
+  "canisters": {
+    "CRUD_App_backend": {
+      "main": "src/CRUD_App_backend/main.mo",
+      "type": "motoko"
+    },
+    "CRUD_App_frontend": {
+      "dependencies": [
+        "CRUD_App_backend"
+      ],
+      "source": [
+        "src/CRUD_App_frontend/dist"
+      ],
+      "type": "assets",
+      "workspace": "CRUD_App_frontend"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
